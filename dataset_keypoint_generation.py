@@ -89,19 +89,3 @@ with mp_hands.Hands(
         pre_processed_landmark_list = pre_process_landmark(landmark_list)
         logging_csv(file[12],pre_processed_landmark_list)
     
-    # print(pre_processed_landmark_list)
-    # print(len(pre_processed_landmark_list))
-    # mp_drawing.draw_landmarks(
-    #       annotated_image,
-    #       hand_landmarks,
-    #       mp_hands.HAND_CONNECTIONS,
-    #       mp_drawing_styles.get_default_hand_landmarks_style(),
-    #       mp_drawing_styles.get_default_hand_connections_style())
-    # cv2.imwrite(
-    #     '/tmp/annotated_image' + str(idx) + '.png', cv2.flip(annotated_image, 1))
-    # # Draw hand world landmarks.
-    # if not results.multi_hand_world_landmarks:
-    #   continue
-    # for hand_world_landmarks in results.multi_hand_world_landmarks:
-    #   mp_drawing.plot_landmarks(
-    #     hand_world_landmarks, mp_hands.HAND_CONNECTIONS, azimuth=5)
